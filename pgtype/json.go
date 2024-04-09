@@ -212,6 +212,7 @@ func (c JSONCodec) DecodeValue(m *Map, oid uint32, format int16, src []byte) (an
 	}
 
 	var dst any
+	fmt.Println("hello jane!")
 	err := json.Unmarshal(src, &dst)
 	return dst, err
 }
